@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your stock quote
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <tr>
+            <th> Company </th>
+            <th> Symbol </th>
+            <th> Stock Price </th>
+        </tr>
+        <tr>
+            <td> {{ name }} </td>
+            <td> {{ symbol }} </td>
+            <td> {{ price }} </td>
+        </tr>
+    </table>
+{% endblock %}

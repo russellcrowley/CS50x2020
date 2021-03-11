@@ -1,0 +1,8 @@
+ask the user for a "height"
+if the "height" is not an integer between 1 and 8, ask again
+
+for the number "height":
+    print a single hash, break line
+    continue printing new line with one more hash until it is "height" amount of hashes
+
+end program

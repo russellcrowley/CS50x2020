@@ -1,0 +1,61 @@
+
+
+/* CSS HEX Colours
+--black: #000000ff;
+--dark-slate-gray: #394f49ff;
+--russian-green: #73955fff;
+--beau-blue: #b4d2e7ff;
+--light-steel-blue: #afc1d6ff;
+--white: #ffffffff; */
+
+#more {
+  display: none;
+}
+.map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.p {
+  padding: 25px;
+}
+.title {
+    color: #394f49ff; /*dark-slate-grey*/
+    text-align: center;
+    padding: 10px;
+}
+.tagline {
+    color: #73955fff; /*russian-green*/
+    font-style: italic;
+    text-align: center;
+    padding: 5px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.links {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+.links td, .links th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.links tr:nth-child(even){background-color: #f2f2f2;}
+
+.links tr:hover {background-color: #ddd;}
+
+.links th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #73955fff;
+  color: white;
+}

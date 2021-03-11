@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <title>Bolly Walks</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">Bolly Walks</a>
+
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="walks.html"> <i class="las la-walking"></i> Walks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="links.html"> <i class="las la-external-link-alt"></i> Links</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      <h1 class="title">The Long Lane Loop</h1>
+      <h3 class="tagline">An easy road walk with fantastic views</h3>
+      <div class="p">
+      <b>Short instructions</b>
+      <i>Starting at the bus stop at the bottom of Shrigley Road, head up the hill. Keep following Shrigley Road as it heads through countryside
+      and Pott Shrigley, before heading uphil past Shrigley hall hotel. Turn left into Long lane at the top of the hill, and follow Long Lane,
+      eventually turning right into Besston Brow. Head down the Hill, rejoin Bollington at Palmerston street and head back to the starting point.</i>
+      <p></p>
+      <div id="dots"></div><div id="more">
+        <b>Full instructions</b>
+      <ul>
+        <li><b>Start at the bus stop, and head up the hill along Shrigley Road.</b>
+        <p><i>All of the ascent comes in the first half of this walk, so take it easy!</i></p>
+        <li><b>Walk up Shrigley road, and continue along the road as the houses finish and you enter the countryside.</b>
+        <p><i>The road quickly leaves the houses behind, and views of Blaze Hill and Harrop Wood open up to the right.</i></p>
+        <li><b>Follow Shrigley road around to the left, remaining along the road as you pass through Pott Shrigley.</b>
+        <p><i>You start to come across houses again as you head into Pott Shrigley, with the church and the school both prominent.
+        Follow the road as it bends sharply to the left, or alternately walk through the church grounds and out a side gate to rejoin the road.</i></p>
+        <li><b>Continue along Shrigley road to the brow of the hill, then turn left into Long Lane.</b>
+        <p><i>As you head up the hill, you'll see the entrance to Shrigley Hall country hotel on your right.
+        This has a cafe and restaurant, but factor in a reasonably long walk along the driveway if you want to visit.</i></p>
+        <li><b>Head up the hill, then follow Long Lane gently downhill.</b>
+        <p><i>After a short sharp climb, Long lane gently descends for approximately a mile,
+        with stunning views of Alderley Edge, the Cheshire plains, and Wales on a clear day on the right.
+        Although there is no footpath, it's rarely used by cars.</i></p>
+        <li><b>Follow Beeston brow as it heads steeply downhill to the right, and then to the left.</b>
+        <p><i>As you reach the end of Long lane, the road bends to the right and heads steeply downhill as ou rejoin civilisation.
+        The road then heads down even more steeply to the left and becomes cobbled, and view of Bollington and White Nancy beyond open up.</i></p>
+        <li><b>Join Palmerston street and follow it back to the start point.</b>
+        <p><i>As you join the road, head uphill, cresting the brow of the hill and then heading back down to the roundabout
+        to arrive at your starting point. There are several refuelling options available to you;
+        you pass two bakeries and several cafes, pubs and restaurants on this last stretch –
+        the fantastic Poachers Inn is just along Ingersley road from the bus station.</i></p>
+      </ul>
+      </div>
+      </div>
+      <button onclick="readmore()" id="myBtn">Full Instructions</button>
+      <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1nMEkeIY-PEViN6lA-jsECrkI1oxKTq8G" height="340"></iframe>
+<script>
+    function readmore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Short Instructions";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+    </body>
+</html>
+
+
+
+    <!-- https://www.google.com/maps/d/edit?mid=1nMEkeIY-PEViN6lA-jsECrkI1oxKTq8G&usp=sharing -->

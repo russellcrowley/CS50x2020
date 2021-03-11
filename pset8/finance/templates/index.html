@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <tr>
+            <th> Symbol </th>
+            <th> Company </th>
+            <th> Shares </th>
+            <th> Price </th>
+            <th> Total </th>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td> {{ stock.symbol }} </td>
+            <td> {{ stock.name }} </td>
+            <td> {{ stock.quantity }} </td>
+            <td> {{ stock.price }} </td>
+            <td> {{ stock.total }} </td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <th> CASH </th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th> {{ cash }}</th>
+        </tr>
+        <tr>
+            <th> TOTAL </th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th> {{ total }}</th>
+        </tr>
+    </table>
+{% endblock %}
